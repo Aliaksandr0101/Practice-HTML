@@ -1,0 +1,147 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+</head>
+<body>
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма резюме</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .form-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-buttons input {
+            margin: 0 10px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Заполнение резюме</h1>
+<form action="#" method="post">
+
+    <!-- Личные данные -->
+    <fieldset>
+        <legend>Личные данные</legend>
+
+        <label for="name">Полное имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Пол:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" style="display:inline;">Мужской</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" style="display:inline;">Женский</label>
+    </fieldset>
+
+    <!-- Образование -->
+    <fieldset>
+        <legend>Образование</legend>
+
+        <label for="degree">Уровень образования:</label>
+        <select id="degree" name="degree">
+            <option value="bachelor">Бакалавр</option>
+            <option value="specialist">Специалист</option>
+            <option value="master">Магистр</option>
+            <option value="phd">Кандидат наук</option>
+        </select>
+
+        <label for="university">Учебное заведение:</label>
+        <input type="text" id="university" name="university" placeholder="Название университета" required>
+
+        <label for="graduation">Год окончания:</label>
+        <input type="number" id="graduation" name="graduation" min="1900" max="2100" required>
+    </fieldset>
+
+    <!-- Опыт работы -->
+    <fieldset>
+        <legend>Опыт работы</legend>
+
+        <label for="company">Последнее место работы:</label>
+        <input type="text" id="company" name="company" placeholder="Название компании" required>
+
+        <label for="position">Должность:</label>
+        <input type="text" id="position" name="position" placeholder="Ваша должность" required>
+
+        <label for="experience">Опишите ваш опыт работы:</label>
+        <textarea id="experience" name="experience" rows="5" placeholder="Краткое описание обязанностей" required></textarea>
+    </fieldset>
+
+    <!-- Навыки -->
+    <fieldset>
+        <legend>Навыки</legend>
+
+        <label for="skills">Ваши навыки:</label>
+        <textarea id="skills" name="skills" rows="4" placeholder="Перечислите ваши ключевые навыки" required></textarea>
+
+        <label>Владение иностранными языками:</label>
+        <input type="checkbox" id="english" name="languages" value="english">
+        <label for="english" style="display:inline;">Английский</label>
+        <input type="checkbox" id="german" name="languages" value="german">
+        <label for="german" style="display:inline;">Немецкий</label>
+        <input type="checkbox" id="french" name="languages" value="french">
+        <label for="french" style="display:inline;">Французский</label>
+    </fieldset>
+
+    <!-- Кнопки отправки и сброса -->
+    <div class="form-buttons">
+        <input type="submit" value="Отправить резюме">
+        <input type="reset" value="Очистить форму">
+    </div>
+
+</form>
+
+</body>
+</html>
+
