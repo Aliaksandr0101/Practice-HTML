@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор количества гостей</title>
+    <style>
+        fieldset{
+            width: 150px;
+            border: 2px solid green;
+            padding: 10px;
+        }
+        .form-field{
+            margin-bottom: 5px;
+            padding: 3px;
+        }
+    </style>
+
+</head>
+<body>
+<form action="#" method="post">
+    <fieldset>
+    <p> Количество гостей (от 1 до 6): </p>
+    <div class="form-field">
+    <input type="number" name="guests" min="1" max="6" value="" step="1">
+    </div>
+    <div class="form-field">
+    <input type="submit" value="Отправить">
+    </div>
+    </fieldset>
+</form>
+
+</body>
+</html>
