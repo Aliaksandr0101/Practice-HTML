@@ -7,33 +7,100 @@
         .form-field{
             margin-bottom: 10px;
         }
+        fieldset {
+            display: inline-block;
+            border: 2px solid black;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
     </style>
-<h1> Резюме для заполнения </h1>
-    <form action="#" method="post">
-        <div class="form-field">
-        Ваше полное имя: <br> <input type="text" name="firstname" value="">
-        </div>
-        <div class="form-field">
-        Ваша фамилия: <br> <input type="text" name="lastname" value="">
-        </div>
-        <div class="form-field">
-        Ваш email: <br> <input type="text" name="email" value="">
-        </div>
-        <div class="form-field">
-           Ваш номер телефона: <br> <input type="text" name="numberPhone" value="">
-        </div>
-        <div class="form-field">
-        Дата рождения: <br> <input type="date"  name="dob" required>
-        </div>
-        <div class="form-field">
-        <label> Ваш пол: </label> <br>
-        <input type="radio" id="male" name="gender" value="male"> Мужчина <br>
-        <input type="radio" id="female" name="gender" value="female"> Женщина <br>
-        </div>
-    </form>
-
 </head>
 <body>
+<h1> Резюме для заполнения </h1>
+
+<form action="#" method="post">
+
+    <fieldset>
+        <legend> Личные данные </legend>
+        <div class="form-field">
+            Ваше полное имя: <br> <input type="text" name="firstname" value="">
+        </div>
+        <div class="form-field">
+            Ваша фамилия: <br> <input type="text" name="lastname" value="">
+        </div>
+        <div class="form-field">
+            Ваш email: <br> <input type="text" name="email" value="">
+        </div>
+        <div class="form-field">
+            Ваш номер телефона: <br> <input type="text" name="numberPhone" value="">
+        </div>
+        <div class="form-field">
+            Дата рождения: <br> <input type="date"  name="dob" required>
+        </div>
+        <div class="form-field">
+            <label> Ваш пол: </label> <br>
+            <input type="radio" id="male" name="gender" value="male"> Мужчина <br>
+            <input type="radio" id="female" name="gender" value="female"> Женщина <br>
+        </div>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend>Образование</legend>
+        <div class="form-field">
+            <select name="degree" size="4">
+                <option value="bachelor">Бакалавр</option>
+                <option value="specialist">Специалист</option>
+                <option value="master">Магистр</option>
+                <option value="phd">Кандидат наук</option>
+            </select>
+        </div>
+        <div class="form-field">
+            Учебное заведение: <br> <input type="text" name="educational institution" value="">
+        </div>
+        <div class="form-field">
+            Год поступления: <br> <input type="number"  name="admission"  value="">
+        </div>
+        <div class="form-field">
+            Год окончания: <br> <input type="number"  name="graduation"  value="">
+        </div>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend> Опыт работы </legend>
+        <div class="form-field">
+            Последнее место работы: <br> <input type="text" name="company" value="">
+        </div>
+        <div class="form-field">
+            Должность: <br> <input type="text" name="position" value="">
+        </div>
+        <div class="form-field">
+            <p>Опишите ваш опыт работы:</p>
+            <textarea id="experience" name="experience" rows="5" placeholder="Краткое описание обязанностей"></textarea>
+        </div>
+    </fieldset>
+</form>
+<form>
+<fieldset>
+    <legend>Навыки</legend>
+    <textarea name="skills" rows="4" placeholder="Перечислите ваши ключевые навыки"></textarea>
+    <legend>Владение иностранными языками:</legend>
+
+    <input type="checkbox" id="english" name="languages" value="English">
+    <label for="english" style="display:inline;">Английский</label><br>
+    <input type="checkbox" id="german" name="languages" value="german">
+    <label for="german" style="display:inline;">Немецкий</label>
+    <input type="checkbox" id="french" name="languages" value="french">
+    <label for="french" style="display:inline;">Французский</label>
+</fieldset>
+</form>
+
 
 </body>
+
+
 </html>
+
