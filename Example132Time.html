@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>24-часовой формат времени</title>
+    <style>
+        fieldset{
+            width: 200px;
+            border: 2px solid green;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
 
 <form action="#" method="post">
+    <fieldset>
     <p> Время открытия церемонии:</p>
-    <input type="time" id="time" name="time" min="00:00" max="23:59" value="14:00">
+    <input type="time"  name="time" min="00:00" max="23:59" value="14:00">
     <input type="submit" value="Отправить">
+    </fieldset>
 </form>
 
 </body>
