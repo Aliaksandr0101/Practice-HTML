@@ -39,3 +39,19 @@ strong {
     color: #000;
     font-weight: bold;
 }
+body {
+    margin: 0;
+    padding: 0;
+}
+.background-section {
+    height: 200vh; /* Высота экрана */
+    background-image: url('pictureJapan/япония.jpg');
+    background-size: cover; /* Масштабирование, чтобы фон занимал весь блок */
+    background-position: center; /* Центрирование фона */
+    background-attachment: fixed; /* Фон фиксируется при прокрутке */
+}
+.scrollable-section {
+    height: 100vh; /* Увеличенная высота для создания скроллинга */
+     background-color: #f0f0f0; /* Пример фона для второй секции */
+    background-attachment: scroll;
+}
