@@ -24,15 +24,30 @@ body {
 
 .title {
     font-size: 36px;
-    color: #1a73e8;
+    color: red;
     text-align: center;
     margin-bottom: 20px;
 }
+.underlined-text {
+    text-decoration: underline;
+
+}
 
 .location {
+    background-color: aqua;
+    border: 10px dotted brown;
+    padding: 20px;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 1.8;
     text-align: justify;
+}
+.location-main{
+    border: 10px dashed red;
+    padding: 10px;
+    margin: auto;
+    max-width: 400px;
+
 }
 
 strong {
@@ -55,3 +70,5 @@ body {
      background-color: #f0f0f0; /* Пример фона для второй секции */
     background-attachment: scroll;
 }
+
+
