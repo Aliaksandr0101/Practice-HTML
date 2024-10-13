@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: darkgreen;
     line-height: 1.6;
     padding: 20px;
 }
@@ -23,6 +23,7 @@ body {
 }
 
 .title {
+    font-family: 'Georgia', serif;
     font-size: 36px;
     color: red;
     text-align: center;
@@ -32,8 +33,18 @@ body {
     text-decoration: underline;
 
 }
+.technology {
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+    font-size: 18px;
+    color: rebeccapurple;
+    margin-bottom: 20px;
+}
 
 .location {
+    font-family: 'Courier New', monospace;
+    font-style: inherit;
+    color: black;
     background-color: aqua;
     border: 10px dotted brown;
     padding: 20px;
@@ -43,14 +54,45 @@ body {
     text-align: justify;
 }
 .location-main{
+    font-family: "Times New Roman", serif;
     border: 10px dashed red;
     padding: 10px;
     margin: auto;
     max-width: 400px;
 
 }
+.culture {
+    font-family: 'Verdana', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #16a085;
+    margin-bottom: 20px;
+}
+.footer {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 40px;
+    text-align: center;
+}
+.japan-link {
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    color: #3498db; /* Цвет ссылки */
+    text-decoration: none; /* Убирает подчеркивание */
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.japan-link:hover {
+    color: #e74c3c; /* Цвет при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
+    text-align: center;
+}
 
 strong {
+    font-family: "Times New Roman", serif;
+    font-size: 25px;
     color: #000;
     font-weight: bold;
 }
