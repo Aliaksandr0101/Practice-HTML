@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Списки с помощью CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .bullet-list {
+            list-style-type: circle; /* Определяет стиль маркера как точку */
+            margin-left: 10px; /* Отступ для маркированного списка */
+        }
+
+        .numbered-list {
+            list-style-type: upper-roman; /* Определяет стиль как числа */
+            margin-left: 10px; /* Отступ для нумерованного списка */
+        }
+
+    </style>
+</head>
+<body>
+<h2>Маркированный список</h2>
+<ul class="bullet-list">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Sed diem nonummy nibh euismod</li>
+</ul>
+
+<h2>Нумерованный список</h2>
+<ol class="numbered-list">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Sed diem nonummy nibh euismod</li>
+</ol>
+</body>
+</html>
