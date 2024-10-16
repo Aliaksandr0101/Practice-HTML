@@ -112,5 +112,27 @@ body {
      background-color: #f0f0f0; /* Пример фона для второй секции */
     background-attachment: scroll;
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+
+
+}
+li {
+    background-color: #87cefa;
+    color: #333;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+li:hover {
+    background-color: #4682b4;
+    color: #fff;
+}
+h1 {
+    text-align: center;
+}
 
 
