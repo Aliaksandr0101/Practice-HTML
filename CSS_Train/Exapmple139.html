@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица больших городов</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h2 {
+            color: black;
+            text-align: center;
+        }
+
+        .city-table {
+            width: 100%;
+            border-collapse: collapse; /* Убирает двойные линии между ячейками */
+            margin-top: 10px;
+            color: darkgreen;
+        }
+
+        .city-table th, .city-table td {
+            border: 3px solid green;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .city-table th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .city-table tbody tr:nth-child(even) {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .city-table tbody tr:hover { /* Подсветка при наведении */
+            background-color: wheat;
+        }
+
+    </style>
+</head>
+<body>
+<h2>10 больших городов мира</h2>
+<table class="city-table">
+    <thead>
+    <tr>
+        <th>Название города</th>
+        <th>Население (млн)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Токио</td>
+        <td>37.4</td>
+    </tr>
+    <tr>
+        <td>Дели</td>
+        <td>31.0</td>
+    </tr>
+    <tr>
+        <td>Шанхай</td>
+        <td>27.1</td>
+    </tr>
+    <tr>
+        <td>Сан-Паулу</td>
+        <td>22.0</td>
+    </tr>
+    <tr>
+        <td>Мехико</td>
+        <td>21.7</td>
+    </tr>
+    <tr>
+        <td>Каир</td>
+        <td>21.3</td>
+    </tr>
+    <tr>
+        <td>Мумбаи</td>
+        <td>20.6</td>
+    </tr>
+    <tr>
+        <td>Пекин</td>
+        <td>20.4</td>
+    </tr>
+    <tr>
+        <td>Осака</td>
+        <td>19.3</td>
+    </tr>
+    <tr>
+        <td>Дакка</td>
+        <td>21.0</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
