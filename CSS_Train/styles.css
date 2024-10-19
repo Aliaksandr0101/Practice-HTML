@@ -16,10 +16,10 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: gray();
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px yellow;
 }
 
 .title {
@@ -108,7 +108,7 @@ body {
     background-attachment: fixed; /* Фон фиксируется при прокрутке */
 }
 .scrollable-section {
-    height: 100vh; /* Увеличенная высота для создания скроллинга */
+    height: 100vh; /* Увеличенная высота для создания листания */
      background-color: #f0f0f0; /* Пример фона для второй секции */
     background-attachment: scroll;
 }
@@ -134,5 +134,24 @@ li:hover {
 h1 {
     text-align: center;
 }
+.for-the-picture-block {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-the-picture-block img {
+    max-width: 100%;
+    max-height: 100%;
 
 
+    object-fit: contain; /* чтобы изображение сохранило пропорции */
+}
+.for-the-picture-block:hover img {
+    opacity: 0.5;
+}
