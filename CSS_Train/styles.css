@@ -156,3 +156,14 @@ h1 {
 .for-the-picture-block:hover img {
     opacity: 0.5;
 }
+.info-block {
+    background-image: linear-gradient(green,red,orangered,purple);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 10px 10px 3px black;
+    font-family: Arial, sans-serif;
+}
